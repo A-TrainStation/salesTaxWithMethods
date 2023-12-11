@@ -8,7 +8,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SalesTaxTests {
 
-    private static final double COUNTY_TAX_RATE = 0.02;
+    public static double getCountyTaxRate() {
+        return COUNTY_TAX_RATE;
+    }
+
+    static final double COUNTY_TAX_RATE = 0.02;
     private static final double STATE_TAX_RATE = 0.04;
     /*Tests user input*/
     @Test
